@@ -29,6 +29,9 @@ public class RegisterUserCommand {
         this.zoneId = zoneId;
     }
 
+    public RegisterUserCommand() {
+    }
+
     public String getTenantId() {
         return tenantId;
     }
