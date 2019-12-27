@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:iam.mysql.rds.aliyuncs.com}:3306/iam?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:db1qaz@WSX}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    database: mysql
+    show-sql: true
+  liquibase:
+    contexts: dev
+  thymeleaf:
+    cache: false
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    enable:
+      root: false
+      jvm: true
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: true

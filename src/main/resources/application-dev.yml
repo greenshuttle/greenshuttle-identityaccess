@@ -1,0 +1,39 @@
+# only for dev
+server:
+  servlet:
+    session:
+      cookie:
+        name: iam
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:3306/iam?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    username: ${MYSQL_USERNAME:root}
+    password: ${MYSQL_PASSWORD:rootyzf}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    database: mysql
+    show-sql: true
+  liquibase:
+    contexts: dev
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+  thymeleaf:
+    cache: false
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    enable:
+      root: false
+      jvm: true
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: true
