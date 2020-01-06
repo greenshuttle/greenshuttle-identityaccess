@@ -1,7 +1,7 @@
 # greenshuttle-identityaccess
 IAM for common platform
 
-### 1. Authorization
+### 1. Authentication
 
 + Code grant authorize with hydra
 + SPA with code grant
@@ -11,8 +11,6 @@ IAM for common platform
 + PKCE with public like APP
 + Multi Identity Provider
 
-### 2. Authorization
+### 2. Access Control
 
-### 3. Access Control
-
-### 4. Data Scope
+### 3. Data Scope
