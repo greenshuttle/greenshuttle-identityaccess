@@ -1,6 +1,6 @@
-package io.greenshuttle.identityaccess.interfaces;
+package io.greenshuttle.identityaccess.interfaces.facade;
 
-import io.greenshuttle.identityaccess.interfaces.vo.LoginResponse;
+import io.greenshuttle.identityaccess.interfaces.dto.LoginResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

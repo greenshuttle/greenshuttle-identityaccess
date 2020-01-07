@@ -1,4 +1,4 @@
-package io.greenshuttle.identityaccess.application.service.security.oauth2;
+package io.greenshuttle.identityaccess.infrastructure.oauth2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package io.greenshuttle.identityaccess.interfaces;
+package io.greenshuttle.identityaccess.interfaces.facade;
 
 import io.greenshuttle.identityaccess.domain.identity.User;
 import io.greenshuttle.identityaccess.domain.identity.UserRepository;

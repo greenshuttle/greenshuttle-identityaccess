@@ -1,4 +1,4 @@
-package io.greenshuttle.identityaccess.interfaces;
+package io.greenshuttle.identityaccess.interfaces.facade;
 
 /**
  * @author yangzifeng
