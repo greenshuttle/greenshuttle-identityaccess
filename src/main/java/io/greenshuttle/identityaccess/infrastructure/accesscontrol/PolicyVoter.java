@@ -43,7 +43,7 @@ public class PolicyVoter implements AccessDecisionVoter<Object> {
         }
 
         FilterInvocation filter = (FilterInvocation) obj;
-        Map<String, String> headers = new HashMap<>();
+        Map<String, String> headers = new HashMap<>(16);
 
         for (Enumeration<String> headerNames = filter.getRequest().getHeaderNames(); headerNames.hasMoreElements();) {
             String header = headerNames.nextElement();
@@ -52,7 +52,7 @@ public class PolicyVoter implements AccessDecisionVoter<Object> {
 
         String[] path = filter.getRequest().getRequestURI().replaceAll("^/|/$", "").split("/");
 
-        Map<String, Object> input = new HashMap<>();
+        Map<String, Object> input = new HashMap<>(16);
         input.put("auth", authentication);
         input.put("method", filter.getRequest().getMethod());
         input.put("path", path);

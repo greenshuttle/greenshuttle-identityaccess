@@ -10,9 +10,9 @@ public enum RoleTypeEnum {
      */
     SYSTEM("system", "系统角色");
 
-    private String code;
+    private final String code;
 
-    private String name;
+    private final String name;
 
     RoleTypeEnum(String code, String name) {
         this.code = code;
