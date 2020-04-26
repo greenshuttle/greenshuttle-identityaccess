@@ -5,12 +5,17 @@ IAM for common platform
 
 + Code grant authorize with hydra
 + SPA with code grant
-+ Front service and UI for hydra
++ Login and Consent UI for hydra
 + TLS support
 + SSO flow with multi SPA
 + PKCE with public like APP
 + Multi Identity Provider
 
-### 2. Access Control
+### 2. Access Control.
+
++ Oauth2ResourceServer
++ Zuul Filter/Kong/Treafik/Envoy
 
 ### 3. Data Scope
+
+![Data Scope](docs/imgs/datascope.png)
